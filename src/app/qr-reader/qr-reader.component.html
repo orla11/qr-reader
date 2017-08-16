@@ -1,0 +1,33 @@
+<label class="qrcode-text-btn">
+    <img
+        src="https://d30y9cdsu7xlg0.cloudfront.net/png/59262-200.png"
+        style="width: 100px;"
+    />
+    <input
+        type=file
+        accept="image/*"
+        capture=environment
+        tabindex=-1
+        (change)="openQrCamera()"
+        (click)="showQrIntro()"
+        #qrReaderEl
+    />
+</label>
+
+<div class="panel panel-danger" *ngIf="error">
+    <div class="panel-heading">
+        <h3 class="panel-title">Error</h3>
+    </div>
+    <div class="panel-body">
+        {{result}}
+    </div>
+</div>
+
+<div class="panel panel-primary" *ngIf="!error && result">
+    <div class="panel-heading">
+        <h3 class="panel-title">Result</h3>
+    </div>
+    <div class="panel-body">
+        {{result}}
+    </div>
+</div>

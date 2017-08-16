@@ -1,0 +1,14 @@
+.qrcode-text-btn {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.qrcode-text-btn > input[type=file] {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
