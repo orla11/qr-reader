@@ -10,7 +10,7 @@ import { Ng2DeviceService } from 'ng2-device-detector';
 })
 export class AppComponent implements OnInit{
   deviceInfo: string;
-  title = 'Test Qr Reader';
+  title = 'Wrench Qr Reader';
 
   constructor (private deviceService: Ng2DeviceService) {
       this.deviceInfo = this.deviceService.getDeviceInfo();
