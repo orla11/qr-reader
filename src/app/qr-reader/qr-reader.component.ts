@@ -15,7 +15,7 @@ declare var qrcode: any;
 })
 export class QrReaderComponent implements OnInit {
   reader: any;
-  result: string;
+  result: any;
   confirmed: boolean = false;
   error: boolean = false;
   @ViewChild('qrReaderEl') node: ElementRef;
