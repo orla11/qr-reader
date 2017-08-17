@@ -46,7 +46,7 @@ export class QrReaderComponent implements OnInit {
   showQrIntro() {
       if (!this.confirmed) {
           this.confirmed = true;
-          return confirm('Use your camera to take a picture of a QR code, make sure to take a clear photo.');
+          return confirm('Use your camera to take a picture of the QR code, make sure to take a clear photo.');
       }
   }
 
