@@ -1,4 +1,10 @@
-import {Component, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {
+    Component,
+    ElementRef,
+    OnInit,
+    Renderer2,
+    ViewChild
+} from '@angular/core';
 
 declare var qrcode: any;
 
@@ -27,7 +33,6 @@ export class QrReaderComponent implements OnInit {
               if (res instanceof Error) {
                   this.error = true;
                   this.result = 'No QR code found. Please make sure the QR code is within the camera\'s frame and try again.';
-                  alert('No QR code found. Please make sure the QR code is within the camera\'s frame and try again.');
               } else {
                   this.result = res;
                   this.error = false;
